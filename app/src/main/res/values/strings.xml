@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Madad</string>
+    <string name="user">USER</string>
+    <string name="admin">ADMIN</string>
+    <string name="title_activity_student__login">Student_Login</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string-array name="GgrivenceTemlets">
+        <item>Passport Loast</item>
+        <item>Passport Renewals</item>
+        <item>Discrimination Problem</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+
+    </string-array>
+
+
+    <string name="country_prompt"> select grievence id</string>
+
+
+    <string name="country_arrays">Feedback Type</string>
+
+    <string-array name="country_arrays">
+        <item>appreciation</item>
+        <item>suggestion</item>
+    </string-array>
+
+    <string-array name="misssion">
+        <item>mission-1</item>
+        <item>mission-2</item>
+        <item>mission-3</item>
+        <item>mission-4</item>
+        <item>mission-5</item>
+    </string-array>
+
+    <string name="did_the_concerened_person_recruitting_agent_use_emigrate_services_while_going_abroad">Did the Concerened Person/Recruitting Agent use eMigrate Services while going abroad?</string>
+    <string name="emigrant_card_no">Emigrant Card No.</string>
+    <string name="e_mail_id">E-mail ID</string>
+    <string name="isd_code_and_mobile_number_example_9865986532">[ISD Code and Mobile Number] Example:9865986532</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="don_t_know">Don\'t know</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="isd_code_std_code_without_0_prefix_telephone_number_example_919856985622">[ISD Code+STD Code-without 0 prefix+Telephone Number] Example:919856985622</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="recruiting_agent_name">Recruiting Agent name</string>
+    <string name="current_address">Current Address</string>
+    <string name="title_activity_admin__login">Admin_Login</string>
+
+
+</resources>

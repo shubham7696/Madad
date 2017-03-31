@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.shubham.madad.getInformation">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00b4e1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="MADAD"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="143dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_below="@id/tb"
+        android:layout_marginEnd="15dp"
+          />
+
+    <EditText
+        android:id="@+id/lName"
+        android:layout_below="@+id/fName"
+        android:layout_marginEnd="15dp"
+        android:hint="Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/rgSex"
+        android:layout_below="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <RadioButton
+            android:id="@+id/male"
+            android:text="Male"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/female"
+            android:text="Female"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+
+<EditText
+    android:id="@+id/dob"
+    android:layout_below="@+id/rgSex"
+    android:layout_marginEnd="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="enter your Date of Birth"
+    android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/passwordNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:ems="10"
+        android:hint="Enter your Password number"
+        android:inputType="phone" />
+
+    <TextView
+    android:id="@+id/chooseProblem"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@+id/passwordNumber"
+    android:hint="Choose your problem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/gcategeory"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/chooseProblem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/GgrivenceTemlets"/>
+
+    <EditText
+        android:id="@+id/adharNumber"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/gcategeory"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:hint="Enter your Adhar Number"
+android:layout_height="wrap_content">
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvQuastion"
+        android:layout_below="@+id/adharNumber"
+        android:layout_marginTop="5dp"
+         android:layout_marginLeft="20dp"
+        android:hint="Do you know the name of recruiting Agent?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rgChoice"
+        android:layout_below="@+id/tvQuastion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:text="yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/no"/>
+
+        <RadioButton
+            android:text="don't know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/dontKnow"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/agentName"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/rgChoice"
+        android:hint="Recruiting Agent Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+    android:id="@+id/currentAdress"
+    android:layout_below="@+id/agentName"
+    android:layout_marginEnd="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPostalAddress"
+    android:hint="Enter your Current Adress"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/isd_code_std_code_without_0_prefix_telephone_number_example_919856985622"
+        android:id="@+id/textView"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/currentAdress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#51d4f4" />
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView"
+        android:hint="Enetr your Moboile Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+ <TextView
+
+     android:id="@+id/countrySelection"
+     android:layout_below="@+id/mobileNumber"
+     android:layout_marginLeft="10dp"
+     android:hint="Select your country"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/countrySelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:dropDownWidth="wrap_content"
+        android:spinnerMode="dropdown"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/emailId"
+        android:layout_below="@+id/spin1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/e_mail_id" />
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/did_the_concerened_person_recruitting_agent_use_emigrate_services_while_going_abroad"
+        android:id="@+id/quastion2"
+        android:layout_below="@+id/emailId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textIsSelectable="true" />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_below="@+id/quastion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:text="@string/yes"
+            android:id="@+id/r1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/no"
+            android:layout_width="0dp"
+            android:id="@+id/r2"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:text="@string/don_t_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+  <EditText
+    android:hint="Enter your eMigrate Number"
+    android:id="@+id/emirgantNumber"
+    android:layout_below="@id/rg"
+    android:layout_marginEnd="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:id="@+id/lLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/emirgantNumber"
+    android:weightSum="20">
+     <TextView
+         android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Is Grievant (Person reporting the Grievance) same as the Person Whon the Grievance Concerns?"
+        android:id="@+id/personConfirmation"
+        android:layout_below="@+id/emirgantNumber"
+        android:textColor="#000000"
+         android:layout_weight="17"/>
+
+    <ToggleButton
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:textOff="NO"
+        android:textOn="YES"
+        android:clickable="true"
+        android:background="#64e7e7"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/personConfirmation"
+        android:layout_toEndOf="@+id/personConfirmation" />
+</LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/lLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#7adbe4" />
+
+
+
+</RelativeLayout>
+</ScrollView>

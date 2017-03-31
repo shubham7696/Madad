@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shubham.madad.MainActivity">
+
+    <TextView
+        android:text="Sign Up !!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/signup"
+        android:textStyle="bold"
+        android:textColor="@color/cast_intro_overlay_button_background_color"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/user"
+        android:hint="Username"
+        android:layout_above="@+id/pass"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/madadlogo"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/tb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:text="Log In"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="28dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:textSize="22sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:hint="password"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:layout_above="@+id/sub"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00b4e1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="MADAD"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="143dp" />
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

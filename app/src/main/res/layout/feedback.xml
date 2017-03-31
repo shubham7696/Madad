@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/m"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="50dp"
+        android:entries="@array/country_arrays"
+        android:hint="Select Grievance ID"
+        android:spinnerMode="dialog"
+        android:prompt="@string/country_prompt" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/country_arrays"
+        android:hint="Select Feedback Type" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:lines="10"
+        android:maxLength="500"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/description"
+        android:layout_gravity="left"
+        android:layout_marginLeft="37dp"
+
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="101dp"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSubmit"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorAccent"
+        android:onClick=""
+        android:text="Clear"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

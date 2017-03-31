@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shubham.madad.Signup">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00b4e1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="MADAD"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="143dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint=" Email Id"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/pass"
+        android:layout_alignLeft="@+id/mobile"
+        android:layout_alignStart="@+id/mobile" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/date"
+        android:hint="Date of Birth"
+        android:layout_above="@+id/mobile"
+        android:layout_alignLeft="@+id/surname"
+        android:layout_alignStart="@+id/surname"
+        android:layout_marginBottom="15dp"
+        android:layout_width="240dp" />
+
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:background="#00b4e1"
+        android:textColor="@color/cast_libraries_material_featurehighlight_text_header_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/cnfpass"
+        android:hint="Confirm Password"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/submit"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignStart="@+id/pass" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:hint="Password"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/cnfpass"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="setDate"
+        android:background="@drawable/calendar"
+        android:layout_height="45dp"
+        android:layout_width="55dp"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignRight="@+id/mobile"
+        android:layout_alignEnd="@+id/mobile"
+        android:layout_alignTop="@+id/date" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobile"
+        android:hint="Mobile "
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/email"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/surname"
+        android:hint="Surname"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/date"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:layout_marginBottom="12dp"
+        android:layout_width="300dp"
+        android:layout_above="@+id/surname"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/madadlogo"
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

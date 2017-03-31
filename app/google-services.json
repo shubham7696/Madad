@@ -1,0 +1,56 @@
+
+{
+  "project_info": {
+    "project_number": "338724250503",
+    "firebase_url": "https://madad-bdeaf.firebaseio.com",
+    "project_id": "madad-bdeaf",
+    "storage_bucket": "madad-bdeaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338724250503:android:c0da2ae46a37d3d1",
+        "android_client_info": {
+          "package_name": "com.shubham.madad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338724250503-d8hh3u018125g1mnmfqgkpcd4qe2o04p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shubham.madad",
+            "certificate_hash": "01168e8594118117d1874a6c61d87dbb5111fae9"
+          }
+        },
+        {
+          "client_id": "338724250503-b02f6jjkpr9m8ng064smb4j8jpfvrenn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAaAGcTKUvhyhLCEAzsjG--ScXcLnd8Fo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338724250503-b02f6jjkpr9m8ng064smb4j8jpfvrenn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
